@@ -19,7 +19,7 @@ from langchain_core.messages import AIMessage
 # STREAMLIT UI SETUP
 # 
 st.set_page_config(page_title="RAG Chatbot with History", layout="centered")
-st.title("RAG Chatbot with Chat History")
+st.title("AI Assist On KAOA Rules")
 
 # INITIALIZE SESSION STATE 
 
