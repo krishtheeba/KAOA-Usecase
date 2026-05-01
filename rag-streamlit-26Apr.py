@@ -41,16 +41,18 @@ if "rag_chain" not in st.session_state:
     # Step-4 Vectorstore
     vector_store = FAISS.from_documents(docs, embeddings)
     retriever_obj = vector_store.as_retriever()
-    os.environ['GROQ_API_KEY']="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"
+   # os.environ['GROQ_API_KEY']=
 
     # Step-5 LLM object
     llm_obj = ChatGroq(
         model="llama-3.1-8b-instant",
-        api_key=os.getenv("GROQ_API_KEY")
+        #api_key=os.getenv("GROQ_API_KEY")
+        api_key="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"
     )
 
     # Step-6 Prompt
     prompt = ChatPromptTemplate.from_template("""
+    You are a helpul AI Assistant.
 Use the following context and chat history to answer the question.
 
 Chat history:
