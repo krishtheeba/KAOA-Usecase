@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-
+from torchvision.transforms.v2 import functional as tvF
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
